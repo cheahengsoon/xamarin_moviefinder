@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Movies"
+             x:Class="moviefinder.Movies">
+  <ScrollView>
+    <StackLayout Padding="10,10,10,10">
+      <Label Text="Movies" FontSize="Large"></Label>
+      <Label Text="Title Search" HorizontalOptions="Start" ></Label>
+      <Entry x:Name="txtTitle" HorizontalOptions="Start" WidthRequest="250" ></Entry>
+      <Button Text="Submit" HorizontalOptions="Start" Clicked="OnSearch"></Button>
+      <Label x:Name="txtMovieTitle" FontSize="Medium" ></Label>
+      <Label x:Name="txtGenre"></Label>
+      <Image x:Name="imgPoster" HorizontalOptions="Start" WidthRequest="150" ></Image>
+      <Label x:Name="txtPlot"></Label>
+      <Label x:Name="txtRated"></Label>
+      <Label x:Name="txtActors"></Label>
+      <Label x:Name="txtImdbRating"></Label>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
